@@ -2,6 +2,10 @@
 #include <stdint.h>
 #include <stdio.h>
 
+// This program shows how to write a function that accepts an array of
+// uint8_t bytes and converts it to std::string (returning this std::string).
+// This is important in order to easily print an array of uint8_t members.
+
 std::string HexStr(const uint8_t *bytes)
 {
     static const char hexmap[16] = {'0', '1', '2', '3', '4', '5', '6', '7',

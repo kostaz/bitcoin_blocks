@@ -2,8 +2,13 @@
 #include <vector>
 #include <stdint.h>
 
+// This program shows how to convert an array of uint8_t or std::vector
+// to std::string in regular or reverse order using only one template function.
+// Actually, any traversible sequence may be converted (both in straight and
+// reverse order).
+
 /**
- * Convert iteratable sequence of uint8_t in reverse order.
+ * Convert iteratable sequence of uint8_t in regular _or_ reverse order.
  */
 template<typename T>
 std::string HexStr(const T& itbegin, const T& itend, bool fSpaces=false)

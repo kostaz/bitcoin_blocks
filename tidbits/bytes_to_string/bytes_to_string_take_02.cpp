@@ -2,6 +2,9 @@
 #include <stdint.h>
 #include <stdio.h>
 
+// This program shows how to convert an array of uint8_t bytes to std::string.
+// This is important in order to easily print an array of uint8_t members.
+
 int main()
 {
     static const char hexmap[16] = {'0', '1', '2', '3', '4', '5', '6', '7',
